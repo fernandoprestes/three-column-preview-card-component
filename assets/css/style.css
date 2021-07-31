@@ -1,0 +1,21 @@
+:root{
+  --color-bright-orange: #e38826;
+  --color-dark-cyan: #006970;
+  --color-very-dark-cyan: #004241;
+  --color-transparent-white: #ffffffbf;
+  --color-very-light-gray: #f2f2f2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+/*
+font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend Deca', sans-serif;*/
