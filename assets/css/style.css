@@ -9,13 +9,77 @@
 * {
   margin: 0;
   padding: 0;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
 html{
   font-size: 62.5%;
+  font-family: 'Lexend Deca', sans-serif;
 }
 
-/*
-font-family: 'Big Shoulders Display', cursive;
-font-family: 'Lexend Deca', sans-serif;*/
+.cards-info{
+  display: flex;
+  flex-direction: column;
+  margin: 5rem auto;
+}
+
+.card{
+  width: 32.7rem;
+  height: 44.2rem;
+  justify-content: center;
+  align-self: center;
+  padding: 4rem 5rem;
+}
+
+.card.-first{
+  border-radius: 1rem 1rem 0 0;
+  background-color: var(--color-bright-orange);
+}
+.card.-first .button{
+  color: var(--color-bright-orange);
+}
+
+.card.-second{
+  background-color: var(--color-dark-cyan);
+}
+.card.-second .button{
+  color: var(--color-dark-cyan);
+}
+
+.card.-third{
+  border-radius: 0 0 1rem 1rem;
+  background-color: var(--color-very-dark-cyan);
+}
+
+.card.-third .button{
+  color: var(--color-very-dark-cyan);
+}
+
+.title{
+  color: var(--color-very-light-gray);
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 4rem;
+  text-transform: uppercase;
+  margin: 3.8rem 0 3rem 0;
+}
+
+.description{
+  color: var(--color-transparent-white);
+  font-size: 1.5rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+
+.button{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-very-light-gray);
+  border-radius: 5rem;
+  width: 14.7rem;
+  height: 4.8rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
