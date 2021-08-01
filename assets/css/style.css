@@ -1,4 +1,4 @@
-:root{
+:root {
   --color-bright-orange: #e38826;
   --color-dark-cyan: #006970;
   --color-very-dark-cyan: #004241;
@@ -13,18 +13,18 @@
   box-sizing: border-box;
 }
 
-html{
+html {
   font-size: 62.5%;
   font-family: 'Lexend Deca', sans-serif;
 }
 
-.cards-info{
+.cards-info {
   display: flex;
   flex-direction: column;
   margin: 5rem auto;
 }
 
-.card{
+.card {
   width: 32.7rem;
   height: 44.2rem;
   justify-content: center;
@@ -32,31 +32,21 @@ html{
   padding: 4rem 5rem;
 }
 
-.card.-first{
+.card.-first {
   border-radius: 1rem 1rem 0 0;
   background-color: var(--color-bright-orange);
 }
-.card.-first .button{
-  color: var(--color-bright-orange);
-}
 
-.card.-second{
+.card.-second {
   background-color: var(--color-dark-cyan);
 }
-.card.-second .button{
-  color: var(--color-dark-cyan);
-}
 
-.card.-third{
+.card.-third {
   border-radius: 0 0 1rem 1rem;
   background-color: var(--color-very-dark-cyan);
 }
 
-.card.-third .button{
-  color: var(--color-very-dark-cyan);
-}
-
-.title{
+.title {
   color: var(--color-very-light-gray);
   font-family: 'Big Shoulders Display', cursive;
   font-weight: 700;
@@ -65,14 +55,14 @@ html{
   margin: 3.8rem 0 3rem 0;
 }
 
-.description{
+.description {
   color: var(--color-transparent-white);
   font-size: 1.5rem;
   line-height: 1.5;
   margin-bottom: 3rem;
 }
 
-.button{
+.button {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -82,4 +72,38 @@ html{
   height: 4.8rem;
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+.cards-info .card .button:hover {
+  border: 1px solid var(--color-very-light-gray);
+  color: var(--color-very-light-gray);
+  background-color: transparent;
+}
+
+.card.-first .button {
+  color: var(--color-bright-orange);
+}
+.card.-second .button {
+  color: var(--color-dark-cyan);
+}
+.card.-third .button {
+  color: var(--color-very-dark-cyan);
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+  }
+  .cards-info {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .card.-first {
+    border-radius: 1rem 0 0 1rem;
+  }
+  .card.-third {
+    border-radius: 0 1rem 1rem 0;
+  }
 }
